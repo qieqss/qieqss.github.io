@@ -63,11 +63,13 @@ label {
     font-weight: bold;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
     border-color: #dcdfe6;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #663399;
 }
 
@@ -152,32 +154,31 @@ nav,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-circle-half-stroke,
-.dark-theme .header__para
-{
-  color: white;
+.dark-theme .header__para {
+    color: #fff;
 }
 
 .dark-theme section {
-  background-color: #242424;
+    background-color: #242424;
 }
 
 .dark-theme #personal-logo,
 .footer__logo--img {
-  filter: invert(1);
+    filter: invert(1);
 }
 
 .dark-theme .scroll__icon {
-  border-color: white;
+    border-color: #fff;
 }
 
 .dark-theme .scroll__icon:after,
 .dark-theme .link__hover-effect--black:after {
-  background-color: white;
+    background-color: #fff;
 }
 
 .dark-theme .mail__btn {
-  background-color: white;
-  color: #242424;
+    background-color: #fff;
+    color: #242424;
 }
 
 .rebecca-purple {
@@ -218,7 +219,7 @@ nav,
 
 .social__link {
     background-color: #663399;
-    color: white;
+    color: #fff;
     padding: 6px;
     width: 32px;
     height: 32px;
@@ -237,7 +238,7 @@ nav,
     border-radius: 50%;
     border: none;
     background-color: #242424;
-    color: white;
+    color: #fff;
     position: fixed;
     bottom: 32px;
     right: 40px;
@@ -385,7 +386,7 @@ nav {
 .form__submit {
     background-color: #663399;
     border: 2px solid #663399;
-    color: white;
+    color: #fff;
     font-size: 20px;
     font-weight: 700;
     width: 100%;
@@ -442,6 +443,7 @@ nav {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -496,7 +498,7 @@ nav {
 .modal__contact {
     transform: translateX(110%);
     background-color: #242424;
-    color: white;
+    color: #fff;
 }
 
 /*
@@ -544,7 +546,7 @@ nav {
     transform: translateY(100%);
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
-    color: white;
+    color: #fff;
     max-width: 550px;
 }
 
@@ -568,7 +570,7 @@ nav {
 }
 
 .project__description--link {
-    color: white;
+    color: #fff;
     font-size: 20px;
     margin-right: 16px;
 }
@@ -595,6 +597,25 @@ footer {
     align-items: center;
 }
 
+.footer__anchor {
+    position: relative;
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+    color: #fff;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
+}
+
 .footer__logo--img {
     width: 65px;
 }
@@ -609,7 +630,7 @@ footer {
 
 .footer__social--link,
 .footer__copyright {
-    color: white;
+    color: #fff;
 }
 
 /*
@@ -644,34 +665,42 @@ width = 80vw
     top: 15vh;
     left: 5vw;
 }
+
 .shape--1 {
     top: 15vh;
     left: 50vw;
 }
+
 .shape--2 {
     top: 15vh;
     left: 80vw;
 }
+
 .shape--3 {
     top: 50vh;
     left: 5vw;
 }
+
 .shape--4 {
     top: 50vh;
     left: 50vw;
 }
+
 .shape--5 {
     top: 50vh;
     left: 80vw;
 }
+
 .shape--6 {
     top: 80vh;
     left: 5vw;
 }
+
 .shape--7 {
     top: 80vh;
     left: 50vw;
 }
+
 .shape--8 {
     top: 80vh;
     left: 80vw;
@@ -683,9 +712,11 @@ width = 80vw
     .title {
         font-size: 80px;
     }
+
     .header__para {
         font-size: 20px;
     }
+
     .modal {
         top: 0;
         left: 0;
@@ -695,8 +726,13 @@ width = 80vw
         flex-direction: column-reverse;
         border-radius: 0;
     }
+
     .modal__half {
         width: 100%;
+    }
+
+    .footer__logo--popper {
+        display: none;
     }
 }
 
@@ -706,24 +742,30 @@ width = 80vw
     .title {
         font-size: 52px;
     }
+
     .header__para {
         font-size: 18px;
     }
+
     .nav__link:first-child {
         display: none;
     }
+
     .project__description--para {
         display: none;
     }
+
     .project__description {
         left: 0;
         padding: 0;
         width: 100%;
         text-align: center;
     }
+
     .project__description--sub-title {
         margin-bottom: 8px;
     }
+
     .modal__half {
         padding: 40px;
     }
