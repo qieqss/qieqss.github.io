@@ -161,7 +161,8 @@ nav,
   background-color: #242424;
 }
 
-.dark-theme #personal-logo {
+.dark-theme #personal-logo,
+.footer__logo--img {
   filter: invert(1);
 }
 
@@ -596,7 +597,6 @@ footer {
 
 .footer__logo--img {
     width: 65px;
-    filter: invert(1);
 }
 
 .footer__social--list {
